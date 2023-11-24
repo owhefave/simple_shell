@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * cmp_env_name - to compare environment variable names
- * store the name passed.
- * @nenv: name assigned to the environment variable
- * @name: the passed name
+ * cmp_env_name - compares env variables names
+ * with the name passed.
+ * @nenv: name of the environment variable
+ * @name: name passed
  *
  * Return: 0 if are not equal. Another value if they are.
  */
@@ -24,12 +24,12 @@ int cmp_env_name(const char *nenv, const char *name)
 }
 
 /**
- * _getenv - to retrieve the environment variable
- * @name: name assigned to the environment variable
- * @_environ: the environment variable
+ * _getenv - get an environment variable
+ * @name: name of the environment variable
+ * @_environ: environment variable
  *
- * Return: if the value of environment variable is found.
- * In other scenario, returns NULL.
+ * Return: value of the environment variable if is found.
+ * In other case, returns NULL.
  */
 char *_getenv(const char *name, char **_environ)
 {
@@ -56,10 +56,10 @@ char *_getenv(const char *name, char **_environ)
 }
 
 /**
- * _env - displays the evironment variables
+ * _env - prints the evironment variables
  *
- * @datash: the relevant data.
- * Return: this returns 1 on success.
+ * @datash: data relevant.
+ * Return: 1 on success.
  */
 int _env(data_shell *datash)
 {
