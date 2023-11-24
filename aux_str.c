@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- *  * _strcat - concatenate two strings
- *   * @dest: char pointer the dest of the copied str
- *    * @src: const char pointer the source of str
- *     * Return: the dest
- *      */
+ *_strcat - join two strings together
+ *@dest: dest of copied str as a pointer to a char
+ *@src: source of str as a pointer to a const char
+ *Return: return to dest
+ */
+
 char *_strcat(char *dest, const char *src)
 {
 		int i;
@@ -24,11 +25,12 @@ char *_strcat(char *dest, const char *src)
 							return (dest);
 }
 /**
- *  * *_strcpy - Copies the string pointed to by src.
- *   * @dest: Type char pointer the dest of the copied str
- *    * @src: Type char pointer the source of str
- *     * Return: the dest.
- *      */
+ *_strcpy - this replicates the string pointed to by src.
+ *@dest: char pointer rep the dest of the replicated str
+ *@src: the char pointer the source of str
+ *Return: return the dest.
+ */
+
 char *_strcpy(char *dest, char *src)
 {
 
@@ -43,11 +45,12 @@ char *_strcpy(char *dest, char *src)
 					return (dest);
 }
 /**
- *  * _strcmp - Function that compares two strings.
- *   * @s1: type str compared
- *    * @s2: type str compared
- *     * Return: Always 0.
- *      */
+ *_strcmp - two strings compator function
+ *@s1: type string comparison
+ *@s2: type string comparison
+ *Return: Always return 0.
+ */
+
 int _strcmp(char *s1, char *s2)
 {
 		int i;
@@ -62,11 +65,12 @@ int _strcmp(char *s1, char *s2)
 						return (0);
 }
 /**
- *  * _strchr - locates a character in a string,
- *   * @s: string.
- *    * @c: character.
- *     * Return: the pointer to the first occurrence of the character c.
- *      */
+ *_strchr - Finds a character within a string
+ *@s: string.
+ *@c: character.
+ *Return: A pointer referencing first instance of the char c.
+ */
+
 char *_strchr(char *s, char c)
 {
 		unsigned int i = 0;
@@ -79,10 +83,10 @@ char *_strchr(char *s, char c)
 					return ('\0');
 }
 /**
- *  * _strspn - gets the length of a prefix substring.
+ *  * _strspn - obtains length of a prefix substring.
  *   * @s: initial segment.
- *    * @accept: accepted bytes.
- *     * Return: the number of accepted bytes.
+ *    * @accept: the accepted bytes.
+ *     * Return: the no of accepted bytes.
  *      */
 int _strspn(char *s, char *accept)
 {

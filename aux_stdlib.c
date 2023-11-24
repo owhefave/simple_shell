@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- *  * get_len - Get the lenght of a number.
- *   * @n: type int number.
- *    * Return: Lenght of a number.
- *     */
+ *get_len - lenght of a number is populated.
+ *@n: the int number type.
+ *Return: The length of number.
+ */
+
 int get_len(int n)
 {
 		unsigned int n1;
@@ -28,9 +29,9 @@ int get_len(int n)
 							return (lenght);
 }
 /**
- *  * aux_itoa - function converts int to string.
- *   * @n: type int number
- *    * Return: String.
+ *  * aux_itoa - the function that converts int to string.
+ *   * @n: the type of int number
+ *    * Return: String val
  *     */
 char *aux_itoa(int n)
 {
@@ -66,9 +67,9 @@ char *aux_itoa(int n)
 }
 
 /**
- *  * _atoi - converts a string to an integer.
- *   * @s: input string.
- *    * Return: integer.
+ *  * _atoi - this converts a string to an int.
+ *   * @s: the string input.
+ *    * Return: integer val
  *     */
 int _atoi(char *s)
 {
